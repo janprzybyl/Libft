@@ -2,7 +2,7 @@
 #define _LIBFT_H_ 
 
 #include <string.h>
-#include <stdlib.h>s
+#include <stdlib.h>
 #include <unistd.h>
 
 typedef struct      s_list
