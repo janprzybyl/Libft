@@ -18,7 +18,7 @@ char *ft_itoa(int n)
         res[i++] = '0';
     
     while (n != 0)
-    {
+    { 
         res[i++] = ((n % 10) * sign) + 48;
         n /= 10;
     } 

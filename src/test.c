@@ -3,63 +3,64 @@
 ///////////////////////////////
 
 #include "libft.h"
+#include <stdio.h>
 
 
-void striter_f(char *c)
-{
-    if ((*c >= 97) && (*c <= 122))
-        *c = *c - 32;
-}
+// void striter_f(char *c)
+// {
+//     if ((*c >= 97) && (*c <= 122))
+//         *c = *c - 32;
+// }
 
-void striteri_f(unsigned int n, char *c)
-{
-    printf("index[%d] before = %s ", n, c);
-    if ((*c >= 97) && (*c <= 122))
-        *c = *c - 32;
-    printf("...and after = %s\n", c);
-}
+// void striteri_f(unsigned int n, char *c)
+// {
+//     printf("index[%d] before = %s ", n, c);
+//     if ((*c >= 97) && (*c <= 122))
+//         *c = *c - 32;
+//     printf("...and after = %s\n", c);
+// }
 
-char strmap_f(char c)
-{
-    if ((c >= 97) && (c <= 122))
-        c = c - 32;
+// char strmap_f(char c)
+// {
+//     if ((c >= 97) && (c <= 122))
+//         c = c - 32;
 
-    return (c);
-}
+//     return (c);
+// }
 
-char strmapi_f(unsigned int n, char c)
-{
-    printf("index[%d] before = %c ", n, c);
-    if ((c >= 97) && (c <= 122))
-        c = c - 32;
-    printf("...and after = %c\n", c);
+// char strmapi_f(unsigned int n, char c)
+// {
+//     printf("index[%d] before = %c ", n, c);
+//     if ((c >= 97) && (c <= 122))
+//         c = c - 32;
+//     printf("...and after = %c\n", c);
 
-    return (c);
-}
+//     return (c);
+// }
 
-void lstdelone_del(void *s, size_t n)
-{
-    if (s)
-    {
-        free(s); 
-        ft_putnbr(n);
-    }
-}
+// void lstdelone_del(void *s, size_t n)
+// {
+//     if (s)
+//     {
+//         free(s); 
+//         ft_putnbr(n);
+//     }
+// }
 
-void lstiter_f(t_list *elem)
-{
-    char *string = "hello";
-    elem->content = string;
-}
+// void lstiter_f(t_list *elem)
+// {
+//     char *string = "hello";
+//     elem->content = string;
+// }
 
-t_list *lstmap_f(t_list *elem)
-{
-    t_list      *node;
+// t_list *lstmap_f(t_list *elem)
+// {
+//     t_list      *node;
 
-    node = ft_lstnew(ft_strdup(elem->content), sizeof(elem->content));
+//     node = ft_lstnew(ft_strdup(elem->content), sizeof(elem->content));
 
-    return (node);
-}
+//     return (node);
+// }
 
 
 int main()
@@ -270,7 +271,7 @@ int main()
 
 
 
-    // printf("%s\n", ft_itoa(822));
+    // printf("%s\n", ft_itoa(1.3));
     // printf("%s\n", ft_itoa(-2147483648));
     // printf("%s\n", ft_itoa(-1));
     // printf("%s\n", ft_itoa(2147483647));
@@ -312,22 +313,22 @@ int main()
 
 
 
-    t_list	*a = ft_lstnew(ft_strdup("1"), sizeof(char));
-    t_list	*b = ft_lstnew(ft_strdup("2"), sizeof(char));
-    t_list	*c = ft_lstnew(ft_strdup("3"), sizeof(char));   
-    t_list	*d = ft_lstnew(ft_strdup("4"), sizeof(char));   
-    t_list	*e = ft_lstnew(ft_strdup("5"), sizeof(char)); 
-    t_list	*f = ft_lstnew(ft_strdup("hello"), sizeof(char)); 
-    t_list	*g = ft_lstnew(ft_strdup("yello"), sizeof(char)); 
+    // t_list	*a = ft_lstnew(ft_strdup("1"), sizeof(char));
+    // t_list	*b = ft_lstnew(ft_strdup("2"), sizeof(char));
+    // t_list	*c = ft_lstnew(ft_strdup("3"), sizeof(char));   
+    // t_list	*d = ft_lstnew(ft_strdup("4"), sizeof(char));   
+    // t_list	*e = ft_lstnew(ft_strdup("5"), sizeof(char)); 
+    // t_list	*f = ft_lstnew(ft_strdup("hello"), sizeof(char)); 
+    // t_list	*g = ft_lstnew(ft_strdup("yello"), sizeof(char)); 
 
     // ft_lstdelone(&a, lstdelone_del);
 
     // ft_lstdel(&a, lstdelone_del);
     
-    ft_lstadd_front(&a, b);
-    ft_lstadd_front(&a, c);
-    ft_lstadd_front(&a, d);
-    ft_lstadd_front(&a, e);
+    // ft_lstadd_front(&a, b);
+    // ft_lstadd_front(&a, c);
+    // ft_lstadd_front(&a, d);
+    // ft_lstadd_front(&a, e);
     
     // ft_lstiter(a, lstiter_f);
 
@@ -342,15 +343,16 @@ int main()
 
     // ft_remove_node(&a, c);
 
-    ft_lstadd_after(&a, f, c);
+    // ft_lstadd_after(&a, f, c);
 
-    ft_lstadd_before(&a, g, c);
+    // ft_lstadd_before(&a, g, c);
     
-    ft_lstprint(a);
+    // ft_lstprint(a);
 
 
 
-    
+    // printf("%s\n", ft_dec_to_hex(17));
+
 
 
     return (0);

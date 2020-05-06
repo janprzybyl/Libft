@@ -76,6 +76,7 @@ void ft_lstadd_front(t_list **alst, t_list *new);
 void ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list *ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
+
 /* ADDITIONAL FUNCTIONS */
 char *ft_strrev(char *s);
 int ft_count_words(char *s, char delimiter);
@@ -86,5 +87,6 @@ void ft_lstadd_back(t_list **alst, t_list *new);
 int ft_remove_node(t_list **alst, t_list *node);
 void ft_lstadd_after(t_list **alst, t_list *new, t_list *prev);
 void ft_lstadd_before(t_list **alst, t_list *new, t_list *next);
+char *ft_dec_to_hex(long long int n);
 
 #endif 
