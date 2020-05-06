@@ -1,1 +1,1 @@
-# libftcopy
+# libft
