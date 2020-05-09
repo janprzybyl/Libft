@@ -351,7 +351,8 @@ int main()
 
 
 
-    // printf("%s\n", ft_dec_to_hex(17));
+    printf("%s\n", ft_dec_to_hex(1732343, 1));
+    printf("%X\n", 1732343);
 
 
 

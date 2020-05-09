@@ -87,7 +87,7 @@ void ft_lstadd_back(t_list **alst, t_list *new);
 int ft_remove_node(t_list **alst, t_list *node);
 void ft_lstadd_after(t_list **alst, t_list *new, t_list *prev);
 void ft_lstadd_before(t_list **alst, t_list *new, t_list *next);
-char *ft_dec_to_hex(long long int n);
+char *ft_dec_to_hex(long long int n, int is_uppercase);
 int ft_dec_to_oct(int n);
 
 #endif 
