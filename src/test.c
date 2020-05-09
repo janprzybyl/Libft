@@ -355,5 +355,10 @@ int main()
 
 
 
+    // printf("%d\n", ft_dec_to_oct(78));
+
+
+
+
     return (0);
 }

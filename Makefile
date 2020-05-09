@@ -1,21 +1,22 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
+NAME = libft.a
 
-$(NAME):
-	# DO SOMETHING
+$(NAME): all
  
 all: 
-	$(CC) -c $(CFLAGS) src/*.c
-	ar -rc libft.a *.o
-	ranlib libft.a
-	$(CC) src/test.c -L. -lft
-	./a.out 
+	@$(CC) -c $(CFLAGS) src/*.c
+	@ar -rc $(NAME) *.o
+
+test:
+	@$(CC) src/test.c -L. -lft
+	@./a.out 
 	
 clean:
-	rm *.o
+	@rm *.o
 
 fclean:
-	rm libft.a a.out *.o
+	@rm $(NAME) a.out *.o
 
 re: fclean all
 
