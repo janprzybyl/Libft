@@ -1,6 +1,6 @@
 #include "libft.h"
 
-char *ft_dec_to_hex(long long int n, int is_uppercase)
+char *ft_dec_to_hex(long long int n, int is_uppercase, int is_pointer)
 {
     int     i;
     int     rem;
@@ -19,7 +19,8 @@ char *ft_dec_to_hex(long long int n, int is_uppercase)
             hex_arr[i++] = hex[rem];
         n = n / 16;    
     }
-    ft_strcat(hex_arr, "x0");
+    if (is_pointer)
+        ft_strcat(hex_arr, "x0");
 
     return (ft_strrev(hex_arr));
 }
