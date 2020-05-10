@@ -360,6 +360,9 @@ int main()
 
 
 
+    // printf("%s\n", ft_ftoa(3.14));
+    // printf("%f\n", 3.14);
+
 
     return (0);
 }
