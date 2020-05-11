@@ -12,11 +12,14 @@ int ft_atoi(const char *str)
 
     while (str[i] != '\0') 
     {
+        if (str[i] < 48 || str[i] > 57 || (str[i] == '-' && i != 0))
+            break;
         if (str[i] == '-') 
         {
             sign = -1;
             i++;
-        } else if (str[i] == '.') 
+        }
+        else if (str[i] == '.') 
             break;
             
         res = res * 10 + str[i++] - '0'; 
