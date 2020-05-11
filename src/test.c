@@ -65,6 +65,7 @@
 
 int main()
 {
+    
     // char str[50] = "I like cats very much";
     // printf("%s\n", ft_memset(str, '!', 5));
 
@@ -362,6 +363,15 @@ int main()
 
     // printf("%s\n", ft_ftoa(3.14));
     // printf("%f\n", 3.14);
+
+
+
+
+    // char *str = malloc(30); 
+    // ft_strcpy(str, "Donald's");
+    // ft_prepend(str, "Mc");
+    // printf("%s\n", str);
+
 
 
     return (0);
