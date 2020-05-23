@@ -1,6 +1,6 @@
 #include "libft.h"
 
-char *ft_itoa(int n)
+char *ft_itoa(long long int n)
 {
     char    *res;
     int     i;
@@ -9,7 +9,7 @@ char *ft_itoa(int n)
     i = 0;
     sign = 1;
 
-    if (!(res = malloc(12 * sizeof(char))))
+    if (!(res = malloc(120 * sizeof(char))))
         return (NULL); 
 
     if (n < 0)
