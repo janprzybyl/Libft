@@ -206,7 +206,7 @@ int main()
 
 
 
-    // printf("%d\n", ft_atoi("123"));
+    printf("%d\n", ft_atoi("4"));
 
 
 

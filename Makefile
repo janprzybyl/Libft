@@ -1,15 +1,18 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 NAME = libft.a
+HEADERS = includes/
+SRC = src
 
 $(NAME): all
  
 all: 
-	@$(CC) -c $(CFLAGS) src/*.c
+	@$(CC) -c $(CFLAGS) -I $(HEADERS) $(SRC)/*.c
 	@ar -rc $(NAME) *.o
+	@echo "\033[32m$(NAME) built!\033[0m"
 
 test:
-	@$(CC) src/test.c -L. -lft
+	@$(CC) $(SRC)/test.c -L. -I $(HEADERS) -lft
 	@./a.out 
 	
 clean:
