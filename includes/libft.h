@@ -92,4 +92,7 @@ int ft_dec_to_oct(int n);
 char *ft_ftoa(double n);
 void ft_prepend(char *s, char *t);
 
+/* OTHER */
+int ft_printf(const char *restrict format, ...);
+
 #endif 
