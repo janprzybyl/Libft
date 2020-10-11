@@ -2,7 +2,7 @@
 //         TEST MAIN         //
 ///////////////////////////////
 
-#include "libft.h"
+#include "../includes/libft.h"
 #include <stdio.h>
 
 
