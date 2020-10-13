@@ -1,5 +1,7 @@
 #include "libft.h"
 
+/* TO CHECK */
+
 char *ft_strnew(size_t size)
 {
     char    *res;

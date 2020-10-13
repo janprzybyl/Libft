@@ -6,6 +6,7 @@ char *ft_dec_to_hex(long long int n, int is_uppercase)
     int     rem;
     char    *hex_arr;
     char    *hex;
+    char    *res;
     
     hex = "0123456789abcdef";
     hex_arr = malloc(50 * sizeof(char));
@@ -19,6 +20,9 @@ char *ft_dec_to_hex(long long int n, int is_uppercase)
             hex_arr[i++] = hex[rem];
         n = n / 16;    
     }
+    res = ft_strrev(hex_arr);
 
-    return (ft_strrev(hex_arr));
+    free(hex_arr);
+
+    return (res);
 }

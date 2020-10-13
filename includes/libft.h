@@ -5,8 +5,8 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-#include "get_next_line.h"
-#include "ft_printf.h"
+// #include "get_next_line.h"
+// #include "ft_printf.h"
 
 typedef struct      s_list
 {
@@ -95,5 +95,8 @@ int ft_dec_to_oct(int n);
 char *ft_ftoa(double n);
 void ft_prepend(char *s, char *t);
 
+/* OTHER */
+int ft_printf(const char *restrict format, ...);
+int get_next_line(const int fd, char **line);
 
 #endif 

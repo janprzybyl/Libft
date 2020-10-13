@@ -10,4 +10,6 @@ void ft_prepend(char *s, char *t)
     ft_bzero(s, ft_strlen(s));      // clear s    
     ft_strcpy(s, t);                // copy t to s
     ft_strcat(s, temp);             // concatenate temp to s
+
+    free(temp);
 }
