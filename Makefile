@@ -7,13 +7,10 @@ SRCS = srcs
 $(NAME): all
  
 all: 
-	@$(CC) -c $(CFLAGS) -I $(HEADERS) $(SRCS)/*.c $(SRCS)/ft_printf/srcs/*.c
+	@$(CC) -c $(CFLAGS) -I $(HEADERS) $(SRCS)/*.c $(SRCS)/ft_printf/srcs/*.c $(SRCS)/get_next_line/src/*.c
 	@ar -rc $(NAME) *.o
 	@echo "\033[32m$(NAME) built!\033[0m"
 
-test:
-	@$(CC) $(SRCS)/test.c -L. -I $(HEADERS) -lft
-	@./a.out 
 	
 clean:
 	@rm *.o
