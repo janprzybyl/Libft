@@ -9,14 +9,14 @@ int ft_count_words(char *s, char delimiter)
     count = 0;
     while (s[i] != '\0')
     {
-        if (s[i] != delimiter)
-        {
-            while (s[i] != delimiter && s[i] != '\0')
+        // if (s[i] != delimiter)
+        // {
+            while (s[i] && s[i] != delimiter && s[i] != '\0')
                 i++;
             count++;
-        } 
-        else
-            i++;
+        // } 
+        // else
+        //     i++;
     }
 
     return (count);
