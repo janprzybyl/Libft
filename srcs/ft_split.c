@@ -23,7 +23,7 @@ static char **create_arr(char *s, char c)
     return (arr);
 }
 
-char **ft_strsplit(char const *s, char c)
+char **ft_split(char const *s, char c)
 {
     int     i;
     int     x;
