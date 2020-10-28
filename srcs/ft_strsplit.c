@@ -1,50 +1,38 @@
 #include "libft.h"
 
-static char **create_arr(char *s, char c)
+char **ft_strsplit(char *str)
 {
-    int     *wordlenght;
-    int     words;
-    int     i;
-    char    **arr;
+    char        **str_arr;
+    int         words_num;
+    int         i;
+    int         w;
+    int         c;
 
-    wordlenght = ft_count_chars((char *)s, c);
-    words = ft_count_words((char *)s, c);
+    words_num = ft_count_words(str, ' ');
+    str_arr = malloc((words_num + 1) * sizeof(char *));
     i = 0;
-    if (!(arr = malloc(sizeof(char *) * words)))
-        return (NULL);
-    while (i < words)
-    {
-        if (!(arr[i] = malloc(sizeof(char) * wordlenght[i])))
-            return (NULL);
-        i++;
-    }
-    return (arr);
-}
+    while (i != words_num)
+        str_arr[i++] = malloc(256 * sizeof(char));
+    str_arr[i] = NULL;
 
-char **ft_split(char const *s, char c)
-{
-    int     i;
-    int     x;
-    int     y;
-    char    **arr;
-
-    if (!(arr = create_arr((char *)s, c)))
-        return (NULL);
     i = 0;
-    y = 0;
-    while (s[i] != '\0')
+    w = 0;
+    while (str[i])
     {
-        if (s[i] != c)
+        if (str[i] != ' ')
         {
-            x = 0;
-            while (s[i] != c && s[i] != '\0')
-                arr[y][x++] = s[i++];
-            arr[y][x] = '\0';
-            y++;
+            c = 0;
+            while (str[i] != ' ' && str[i])
+            {
+                str_arr[w][c] = str[i];
+                c++;
+                i++;
+            }
+            w++;
         }
         else
-           i++;
+            i++;
     }
-    arr[y] = NULL;
-    return (arr);
+
+    return (str_arr);
 }

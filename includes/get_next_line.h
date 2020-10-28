@@ -1,5 +1,5 @@
-// #ifndef _GET_NEXT_LINE_H_
-// #define _GET_NEXT_LINE_H_
+#ifndef _GET_NEXT_LINE_H_
+#define _GET_NEXT_LINE_H_
 
 #include "libft.h"
 
@@ -10,4 +10,4 @@
 
 int get_next_line(const int fd, char **line);
 
-// #endif
+#endif
