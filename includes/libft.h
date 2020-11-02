@@ -94,11 +94,7 @@ char *ft_dec_to_hex(long long int n, int is_uppercase);
 int ft_dec_to_oct(int n);
 char *ft_ftoa(double n);
 void ft_prepend(char *s, char *t);
-<<<<<<< HEAD
-char **ft_strsplit(char *str);
-=======
 char **ft_strsplit(char *str, int delimiter);
->>>>>>> 349d77c9b4d036dfb6d94ce04fb1c5b6f7a03cf7
 
 /* OTHER */
 int ft_printf(const char *restrict format, ...);
