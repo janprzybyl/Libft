@@ -4,6 +4,7 @@
 #include "libft.h"
 #include <stdarg.h>
 #include <stdbool.h>
+#include <stdio.h>
 
 typedef struct  s_info
 {
