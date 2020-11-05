@@ -1,9 +1,10 @@
-#ifndef FT_PRINTF_H
-#define FT_PRINTF_H
+#ifndef _FT_PRINTF_H_
+#define _FT_PRINTF_H_
 
 #include "libft.h"
 #include <stdarg.h>
 #include <stdbool.h>
+#include <stdio.h>
 
 typedef struct  s_info
 {

@@ -7,16 +7,16 @@ int ft_count_words(char *s, char delimiter)
 
     i = 0;
     count = 0;
-    while (s[i] != '\0')
+    while (s[i])
     {
-        // if (s[i] != delimiter)
-        // {
-            while (s[i] && s[i] != delimiter && s[i] != '\0')
-                i++;
-            count++;
-        // } 
-        // else
-        //     i++;
+        while (s[i] && s[i] == delimiter)
+            i++;
+        if (!s[i])
+            return (count);
+
+        while (s[i] && s[i] != delimiter)
+            i++;
+        count++;
     }
 
     return (count);
