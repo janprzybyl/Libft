@@ -5,8 +5,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-// #include "get_next_line.h"
-// #include "ft_printf.h"
+extern char **environ;  // ft_getenv
 
 typedef struct      s_list
 {
@@ -80,6 +79,8 @@ void ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list *ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
 
+
+
 /* ADDITIONAL FUNCTIONS */
 char *ft_strrev(char *s);
 int ft_count_words(char *s, char delimiter);
@@ -95,8 +96,9 @@ int ft_dec_to_oct(int n);
 char *ft_ftoa(double n);
 void ft_prepend(char *s, char *t);
 char **ft_strsplit(char *str, int delimiter);
+char *ft_getenv(const char *name);
 
-/* OTHER */
+/* SEPARATE PROJECTS */
 int ft_printf(const char *restrict format, ...);
 int get_next_line(const int fd, char **line);
 
