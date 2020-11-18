@@ -95,8 +95,9 @@ char *ft_dec_to_hex(long long int n, int is_uppercase);
 int ft_dec_to_oct(int n);
 char *ft_ftoa(double n);
 void ft_prepend(char *s, char *t);
-char **ft_strsplit(char *str, int delimiter);
-char *ft_getenv(const char *name);
+char **ft_strsplit(char *str, int delimiter);                       // splits string by specific character
+char *ft_getenv(const char *name);                                  // returns enviromental variable
+int ft_arrlen(char **array);                                        // check the lenght of an array`
 
 /* SEPARATE PROJECTS */
 int ft_printf(const char *restrict format, ...);
