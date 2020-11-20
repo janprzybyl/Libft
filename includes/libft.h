@@ -97,7 +97,8 @@ char *ft_ftoa(double n);
 void ft_prepend(char *s, char *t);
 char **ft_strsplit(char *str, int delimiter);                       // splits string by specific character
 char *ft_getenv(const char *name);                                  // returns enviromental variable
-int ft_arrlen(char **array);                                        // check the lenght of an array`
+int ft_arrlen(char **array);                                        // check the lenght of an array
+int ft_charidx(char *s, int c);                                     // returns specific character index
 
 /* SEPARATE PROJECTS */
 int ft_printf(const char *restrict format, ...);
