@@ -13,10 +13,10 @@ all:
 
 	
 clean:
-	@rm *.o
+	@/bin/rm -fr *.o
 
-fclean:
-	@rm $(NAME) a.out *.o
+fclean: clean
+	@/bin/rm -fr $(NAME) a.out
 
 re: fclean all
 
